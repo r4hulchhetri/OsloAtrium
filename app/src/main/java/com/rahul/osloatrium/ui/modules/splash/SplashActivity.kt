@@ -29,5 +29,6 @@ class SplashActivity : BaseActivity() {
 
     private fun handleIntent() {
         startActivity(Intent(this, LoginActivity::class.java))
+        finish()
     }
 }
