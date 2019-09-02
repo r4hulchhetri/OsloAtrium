@@ -3,6 +3,8 @@ package com.rahul.osloatrium
 class Constants {
 
     companion object {
-        val SPLASH_DELAY = 1000L
+        const val SPLASH_DELAY = 1000L
+
+        const val TIMEOUT_SECONDS = 10L
     }
 }

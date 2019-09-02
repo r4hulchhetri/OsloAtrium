@@ -1,9 +1,11 @@
 package com.rahul.osloatrium.ui.modules.splash
 
+import android.content.Intent
 import android.os.Handler
 import com.rahul.osloatrium.Constants
 import com.rahul.osloatrium.R
 import com.rahul.osloatrium.ui.base.BaseActivity
+import com.rahul.osloatrium.ui.modules.auth.login.LoginActivity
 
 class SplashActivity : BaseActivity() {
 
@@ -26,6 +28,6 @@ class SplashActivity : BaseActivity() {
     }
 
     private fun handleIntent() {
-
+        startActivity(Intent(this, LoginActivity::class.java))
     }
 }
