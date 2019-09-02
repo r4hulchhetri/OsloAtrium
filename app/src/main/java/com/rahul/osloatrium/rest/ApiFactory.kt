@@ -1,6 +1,5 @@
 package com.rahul.osloatrium.rest
 
-import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import com.rahul.osloatrium.BuildConfig
 import com.rahul.osloatrium.Constants
 import com.rahul.osloatrium.rest.interceptors.RequestInterceptor
@@ -32,7 +31,6 @@ object ApiFactory {
         .client(okHttpClient)
         .baseUrl(BuildConfig.BASE_URL)
         .addConverterFactory(GsonConverterFactory.create())
-        .addCallAdapterFactory(CoroutineCallAdapterFactory())
         .build()
 
     val loginService: LoginService = retrofit().create(LoginService::class.java)
